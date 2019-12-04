@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-size: 30px;
+    background: black;
+}
+
+.ora {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #17d4fe;
+    text-shadow: 2px 0 0px #800040, 3px 2px 0px rgba(77, 0, 38, 0.5),
+        3px 0 3px #ff002b, 5px 0 3px #800015, 6px 2px 3px rgba(77, 0, 13, 0.5),
+        6px 0 9px #ff5500, 8px 0 9px #802a00, 9px 2px 9px rgba(77, 25, 0, 0.5),
+        9px 0 18px #ffd500, 11px 0 18px #806a00, 12px 2px 18px rgba(77, 66, 0, 0.5),
+        12px 0 30px #d4ff00, 14px 0 30px #6a8000, 15px 2px 30px rgba(64, 77, 0, 0.5),
+        15px 0 45px #80ff00, 17px 0 45px #408000, 17px 2px 45px rgba(38, 77, 0, 0.5),
+        2px 0px 12px #2530ce;
+}
+
+.titlu {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #17d4fe;
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+    text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
+        #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px, #ff2d95 0px 0px 40px,
+        #ff2d95 0px 0px 50px, #ff2d95 0px 0px 75px, 2px 2px 2px rgba(72, 206, 31, 0),
+        2px 2px 2px rgba(72, 206, 31, 0);
+}
+
+audio {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.logo h1 {
+    color: #fff;
+    font-family: "Dancing Script", cursive;
+    font-size: 39px;
+}
+
+.ceas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 92vh;
+}
+
+.ora {
+    font-size: 45px;
+    padding-bottom: 50px;
+}
+
+.ico {
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 18px;
+}
+
+.ico a {
+    color: #fff;
+    transition: transform 0.6s;
+}
+
+.ico a:hover {
+    color: #17d4fe;
+    transform: scale(2.2);
+}
+
+footer {
+    color: #343434;
+    font-size: 25px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .titlu {
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+        text-shadow: 0px 5px 13px #cb16e1;
+    }
+
+    .ora h1 {
+        width: 100%;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .ceas {
+        height: inherit;
+    }
+}
